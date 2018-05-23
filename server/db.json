@@ -1,0 +1,22 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "elector": 603780293,
+    "person": 1
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "elector": {
+      "603780292": "{\"code_elec\":0,\"sex\":1,\"expiration_date\":20230311,\"junta\":0,\"name\":\"Rodolfo\",\"first_last_name\":\"Canessa\",\"second_last_name\":\"Espinoza\",\"id\":603780292}"
+    },
+    "person": {}
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "elector",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "code_elec": {
+      "type": "number",
+      "required": true
+    },
+    "sex": {
+      "type": "number",
+      "required": true
+    },
+    "expiration_date": {
+      "type": "number",
+      "required": true
+    },
+    "junta": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "first_last_name": {
+      "type": "string",
+      "required": true
+    },
+    "second_last_name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

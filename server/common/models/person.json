@@ -1,0 +1,39 @@
+{
+  "name": "person",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cedula": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true,
+      "default": "date"
+    },
+    "check_in": {
+      "type": "date",
+      "required": true,
+      "defaultFn": "now"
+    },
+    "check_out": {
+      "type": "date"
+    },
+    "signature": {
+      "type": "buffer",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
