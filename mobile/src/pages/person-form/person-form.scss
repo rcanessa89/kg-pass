@@ -1,0 +1,32 @@
+.person-form {
+    &__signature-pad {
+        display: flex;
+        justify-content: center;
+        margin: $gutter-2 0;
+
+        canvas {
+            border: 1px #333 dashed;
+        }
+    }
+
+    &__content {
+        .item {
+            margin-bottom: $gutter-2;
+        }
+
+        .scroll-content {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__form {
+        width: 100%;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: $gutter-1;
+    }
+}

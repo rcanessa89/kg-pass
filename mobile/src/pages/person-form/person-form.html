@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Register form</ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-title>Fill the register form.</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="person-form__content">
+  <form
+    class="person-form__form"
+    novalidate
+    [formGroup]="personForm"
+    (ngSubmit)="personFormSubmit()"
+  >
+    <ion-grid>
+      <ion-row>
+        <ion-col col-sm-5 col-xs-12>
+          <ion-list>
+            <ion-item>
+              <ion-label color="primary" floating>ID</ion-label>
+              <ion-input type="text" formControlName="id" required></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary" floating>First Last Name</ion-label>
+                <ion-input type="text" formControlName="first_last_name" required></ion-input>
+              </ion-item>
+          </ion-list>
+        </ion-col>
+        <ion-col col-sm-5 col-xs-12 offset-sm-1>
+          <ion-list>
+            <ion-item>
+              <ion-label color="primary" floating>Name</ion-label>
+              <ion-input type="text" formControlName="name" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label color="primary" floating>Seconda Last Name</ion-label>
+              <ion-input type="text" formControlName="second_last_name" required></ion-input>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-sm-8 col-xs-12 offset-sm-2>
+          <h2 text-center>Signature</h2>
+          <signature-pad class="person-form__signature-pad" [options]="signaturePadOptions"></signature-pad>
+          <div class="person-form__button">
+              <button ion-button color="danger" (click)="deleteSignature()">Delete</button>
+          </div>
+          <div class="person-form__button">
+            <button type="submit" ion-button>Submit</button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>

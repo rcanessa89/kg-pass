@@ -86,3 +86,21 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+
+
+/////////////////////////
+// Custom variables
+/////////////////////////
+
+// Spaceing
+$gutter: 30px;
+$gutter-1: $gutter / 2;
+$gutter-2: $gutter;
+$gutter-3: $gutter * 1.5;
+$gutter-4: $gutter * 2;
+$gutter-5: $gutter * 2.5;
+
+// Colors
+$kg-blue: #1a8cd0;

@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-12">
+    <h2>Registries</h2>
+    <h3>Active people registries</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-8 col-sm-12 col-xs-12">
+    <mat-list>
+        <mat-list-item *ngFor="let registry of registries; let i = index" class="position-relative">
+          <mat-icon matListIcon>face</mat-icon>
+          <h3 matLine> {{registry.name}} {{registry.last_name}} </h3>
+          <p matLine>
+            <span> {{formatDate(registry.check_in)}} </span>
+            <span class="home-page__checkout" (click)="showCheckoutModal(registry, i)"><mat-icon>close</mat-icon></span>
+          </p>
+        </mat-list-item>
+      </mat-list>
+  </div>
+</div>

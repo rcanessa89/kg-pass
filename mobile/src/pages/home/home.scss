@@ -1,3 +1,28 @@
 page-home {
+    .scroll-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 
+.home {
+    background-color: $kg-blue;
+    
+    &__img {
+        margin-bottom: $gutter-1;
+    }
+
+    &__button {
+        margin-bottom: $gutter-1;
+        
+        button {
+            min-width: 80px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
