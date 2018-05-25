@@ -1,3 +1,31 @@
-<p>
-  export-page works!
-</p>
+<div class="row">
+  <div class="col-md-12">
+    <h2>Export</h2>
+    <h3>Export an excel file by dates</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h4>From</h4>
+    <mat-form-field>
+      <input matInput [matDatepicker]="dp1" placeholder="Select the date" disabled [(ngModel)]="from">
+      <mat-datepicker-toggle matSuffix [for]="dp1"></mat-datepicker-toggle>
+      <mat-datepicker #dp1 disabled="false"></mat-datepicker>
+    </mat-form-field>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h4>To</h4>
+    <mat-form-field>
+      <input matInput [matDatepicker]="dp2" placeholder="Select the date" disabled [(ngModel)]="to">
+      <mat-datepicker-toggle matSuffix [for]="dp2"></mat-datepicker-toggle>
+      <mat-datepicker #dp2 disabled="false"></mat-datepicker>
+    </mat-form-field>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <button class="submit" (click)="getExcel()" mat-button mat-stroked-button>Get Excel</button>
+  </div>
+</div>

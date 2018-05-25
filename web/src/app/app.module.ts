@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +15,10 @@ import {
   MatToolbarModule,
   MatSidenavModule,
   MatListModule,
-  MatDialogModule
+  MatDialogModule,
+  MatDatepickerModule,
+  MatInputModule,
+  MatNativeDateModule
 } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -28,7 +32,7 @@ import { NavComponent } from './share/nav/nav.component';
     HomePageComponent,
     ExportPageComponent,
     ConfirmDialogComponent,
-    NavComponent
+    NavComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,12 @@ import { NavComponent } from './share/nav/nav.component';
     MatSidenavModule,
     MatListModule,
     HttpClientModule,
-    MatDialogModule
+    MatDialogModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   entryComponents: [
     ConfirmDialogComponent

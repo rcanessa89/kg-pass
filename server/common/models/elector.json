@@ -2,10 +2,10 @@
   "name": "elector",
   "base": "PersistedModel",
   "idInjection": true,
-  "forceId": false,
   "options": {
     "validateUpsert": true
   },
+  "forceId": false,
   "properties": {
     "code_elec": {
       "type": "number",

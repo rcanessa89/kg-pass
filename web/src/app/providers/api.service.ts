@@ -15,7 +15,7 @@ export class ApiService {
     public http: HttpClient
   ) {}
 
-  private baseUrl = 'http://10.28.6.172:3000/api/';
+  private baseUrl = 'http://localhost:3000/api/';
 
   public call(url: string, method: string = 'GET', body?: any): Observable<any> {
     const fullUrl = `${this.baseUrl}${url}`;
