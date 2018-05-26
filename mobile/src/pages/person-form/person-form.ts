@@ -34,7 +34,8 @@ export class PersonFormPage {
     if (this.signaturePad.isEmpty()) {
       return this.showPromptInvalid('Signature is required');
     } else {
-      const signatureBase64 = this.signaturePad.toDataURL().split(';')[1];
+      const signatureBase64 = this.signaturePad.toDataURL().split(',')[1];
+
       this.personForm.controls['signature'].setValue(signatureBase64);
     }
 

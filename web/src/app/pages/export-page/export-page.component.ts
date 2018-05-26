@@ -21,8 +21,26 @@ export class ExportPageComponent {
       from: this.from,
       to: this.to
     };
+    const options: any = {
+      responseType: 'blob'
+    }
 
-    this.api.call('people/excel', 'post', body)
-      .subscribe((res) => console.log(res));
+    this.api.call('people/excel', 'post', body, options)
+      .subscribe(res => {
+        var url = window.URL.createObjectURL(res).split(',')[1];
+        var a = document.createElement('a');
+
+        a.setAttribute('style', 'display: none');
+        a.href = url;
+        a.download = 'registros.xlsx';
+
+        document.body.appendChild(a);
+        
+        a.click();
+
+        window.URL.revokeObjectURL(url);
+
+        a.remove();
+      });
   }
 }

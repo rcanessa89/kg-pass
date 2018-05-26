@@ -13,6 +13,8 @@
     "posttest": "npm run lint && nsp check"
   },
   "dependencies": {
+    "base64-img": "^1.0.4",
+    "buffer-type": "0.0.2",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "excel4node": "^1.3.6",
@@ -21,6 +23,7 @@
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^6.0.0",
     "loopback-connector-mysql": "^5.2.0",
+    "moment": "^2.22.1",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^2.0.0",
     "yargs": "^11.0.0"
